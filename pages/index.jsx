@@ -4,31 +4,41 @@ import axios from 'axios';
 import { useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import Weather from '../components/Weather';
-import Spinner from '../components/Spinner';
+// import Spinner from '../components/Spinner';
 
 export default function Home() {
 
   const [city, setCity] = useState('');
   const [weather, setWeather] = useState({});
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`
   console.log(city)
 
-  const fetchWeather = (e) => {
-    e.preventDefault()
-    setLoading(true)
-    axios.get(url).then((response) => {
-      setWeather(response.data)
-      // console.log(response.data)
-    })
-    setCity('')
-    setLoading(false)
+  const fetchWeather = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.get(url);
+      setWeather(response.data);
+      setCity('');
+    } catch (error) {
+      console.error(error);
+    }
   };
 
-  if(loading) {
-    return <Spinner />
-  } else {
+  // const fetchWeather = (e) => {
+  //   e.preventDefault()
+  //   // setLoading(true)
+  //   axios.get(url).then((response) => {
+  //     setWeather(response.data)
+  //     setCity('') 
+  //     // setLoading(false)
+  //   })
+  // };
+
+  // if(loading) {
+  //   return <Spinner />
+  // } else {
     return (
       <div>
         <Head>
@@ -69,4 +79,5 @@ export default function Home() {
     );
   };
 
-}
+// }
+
