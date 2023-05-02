@@ -19,7 +19,7 @@ console.log(data)
       </div>
 
       {/* Bottom */}
-      <div className='bg-black/50 relative p-8 rounded-md mb-5' >
+      <div className='bg-black/50 relative p-8 rounded-md max-lg:mb-5 max-md:mb-9 max-sm:mb-[100px]' >
         <p className='text-2xl text-center pb-6' >Weather in {data.name}</p>
         <div className='flex justify-between text-center'>
           <div>
