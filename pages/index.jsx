@@ -60,6 +60,7 @@ export default function Home() {
             <form onSubmit={fetchWeather} className='flex justify-between items-center lg:w-[500px] m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl  max-md:w-[400px] max-sm:w-[300px]' >
               <div>
                 <input 
+                  value={city}
                   onChange={(e) => setCity(e.target.value)}
                   className='bg-transparent border-none text-white focus:outline-none text-2xl max-md:w-[350px] max-sm:w-[250px]'
                   type='text' 
