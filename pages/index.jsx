@@ -67,7 +67,7 @@ export default function Home() {
                   placeholder='Search city' 
                   />
               </div>
-              <button onClick={fetchWeather}>
+              <button id='search' onClick={fetchWeather}>
                 <BsSearch size={20} />
               </button>
             </form>
