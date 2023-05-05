@@ -68,8 +68,8 @@ export default function Home() {
                   />
               </div>
               <button id='search-city' aria-label='search city' onClick={fetchWeather}>
-                <BsSearch className="hidden md:block md:text-2xl" size={20} />
-                <BsSearch className="block md:hidden text-2xl" size={48} />
+                <BsSearch className="hidden lg:block lg:text-2xl" size={20} />
+                <BsSearch className="block lg:hidden text-2xl" size={48} />
               </button>
             </form>
           </div>
