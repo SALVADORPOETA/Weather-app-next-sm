@@ -57,7 +57,7 @@ export default function Home() {
           />
           {/* Search */}
           <div className='relative flex justify-between items-center max-w-[500px] lg:w-[500px] m-auto pt-4 text-white z-10 max-md:w-[400px]  max-sm:w-[330px]' >
-            <form onSubmit={fetchWeather} className='flex justify-between items-center lg:w-[500px] m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl  max-md:w-[400px] max-sm:w-[330px]' >
+            <form onSubmit={fetchWeather} className='flex justify-between items-center lg:w-[500px] m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl  max-md:w-[450px] max-sm:w-[350px]' >
               <div>
                 <input 
                   value={city}
