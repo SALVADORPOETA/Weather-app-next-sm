@@ -67,7 +67,7 @@ export default function Home() {
                   placeholder='Search city' 
                   />
               </div>
-              <button id='search city' onClick={fetchWeather}>
+              <button id='search city' aria-label='search city' onClick={fetchWeather}>
                 <BsSearch size={20} />
               </button>
             </form>
