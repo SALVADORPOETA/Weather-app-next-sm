@@ -56,19 +56,19 @@ export default function Home() {
           alt='/'
           />
           {/* Search */}
-          <div className='relative flex justify-between items-center max-w-[500px] lg:w-[500px] m-auto pt-4 text-white z-10 max-md:w-[400px]  max-sm:w-[300px]' >
-            <form onSubmit={fetchWeather} className='flex justify-between items-center lg:w-[500px] m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl  max-md:w-[400px] max-sm:w-[300px]' >
+          <div className='relative flex justify-between items-center max-w-[500px] lg:w-[500px] m-auto pt-4 text-white z-10 max-md:w-[400px]  max-sm:w-[330px]' >
+            <form onSubmit={fetchWeather} className='flex justify-between items-center lg:w-[500px] m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl  max-md:w-[400px] max-sm:w-[330px]' >
               <div>
                 <input 
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
-                  className='bg-transparent border-none text-white focus:outline-none text-2xl max-md:w-[350px] max-sm:w-[250px]'
+                  className='bg-transparent border-none text-white focus:outline-none text-2xl max-md:w-[350px] max-sm:w-[280px]'
                   type='text' 
                   placeholder='Search city' 
                   />
               </div>
               <button id='search city' aria-label='search city' onClick={fetchWeather}>
-                <BsSearch size={20} />
+                <BsSearch size={48} />
               </button>
             </form>
           </div>
