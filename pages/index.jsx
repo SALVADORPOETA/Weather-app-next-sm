@@ -62,13 +62,14 @@ export default function Home() {
                 <input 
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
-                  className='bg-transparent border-none text-white focus:outline-none text-2xl max-md:w-[350px] max-sm:w-[280px]'
+                  className='bg-transparent border-none text-white focus:outline-none text-2xl max-md:w-[350px] max-sm:w-[250px]'
                   type='text' 
                   placeholder='Search city' 
                   />
               </div>
-              <button id='search city' aria-label='search city' onClick={fetchWeather}>
-                <BsSearch size={48} />
+              <button id='search-city' aria-label='search city' onClick={fetchWeather}>
+                <BsSearch className="hidden md:block md:text-2xl" size={20} />
+                <BsSearch className="block md:hidden text-2xl" size={48} />
               </button>
             </form>
           </div>
