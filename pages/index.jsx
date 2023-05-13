@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import Weather from '../components/Weather';
-import '../styles/extrass.css';
+import '../styles/extras.css';
 // import Spinner from '../components/Spinner';
 
 export default function Home() {
